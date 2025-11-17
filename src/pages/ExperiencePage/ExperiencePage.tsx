@@ -8,7 +8,7 @@ import { SoundBar } from "../../UI/SoundBar";
 import { LanguageButton } from "../../UI/LanguageButton";
 import { ExperienceCard } from "../../UI/ExperienceCard";
 import { LogoComponent } from "../../UI/LogoComponent";
-import { ToReturnButton } from "../../UI/PowerButton";
+import { ToReturnButton } from "../../UI/ToReturnButton";
 import { containerVariants } from "./ExperiencePage.const";
 import { Main, Rotate, Wrapper } from "./ExperiencePage.styles";
 

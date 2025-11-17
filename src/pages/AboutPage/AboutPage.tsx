@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import astronaut from "../../assets/Images/spaceman.png";
 import { LogoComponent } from "../../UI/LogoComponent";
 import { SocialIcons } from "../../UI/SocialIcons";
-import { ToReturnButton } from "../../UI/PowerButton";
+import { ToReturnButton } from "../../UI/ToReturnButton";
 import { BigTitle } from "../../UI/BigTitlte";
 import ParticleComponent from "../../UI/ParticleComponent/ParticleComponent";
 import { SoundBar } from "../../UI/SoundBar";

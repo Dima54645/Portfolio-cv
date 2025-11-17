@@ -4,7 +4,7 @@ import { YinYang } from "../../UI/AllSvgs";
 import { BigTitle } from "../../UI/BigTitlte";
 import { LogoComponent } from "../../UI/LogoComponent";
 import { SocialIcons } from "../../UI/SocialIcons";
-import { ToReturnButton } from "../../UI/PowerButton";
+import { ToReturnButton } from "../../UI/ToReturnButton";
 import { SoundBar } from "../../UI/SoundBar";
 import { LanguageButton } from "../../UI/LanguageButton";
 import ParticleComponent from "../../UI/ParticleComponent/ParticleComponent";

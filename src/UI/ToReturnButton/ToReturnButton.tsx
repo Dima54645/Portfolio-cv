@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import { ToReturnIcon, ToReturnIconButton } from "./PowerButton.styles";
+import { ToReturnIcon, ToReturnIconButton } from "./ToReturnButton.styles";
 import type { ThemeModeProps } from "../../types";
 
 export const ToReturnButton: React.FC<ThemeModeProps> = ({
