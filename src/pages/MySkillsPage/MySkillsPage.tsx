@@ -4,7 +4,7 @@ import { YinYang } from "../../UI/AllSvgs";
 import { BigTitle } from "../../UI/BigTitlte";
 import { LogoComponent } from "../../UI/LogoComponent";
 import { SocialIcons } from "../../UI/SocialIcons";
-import { PowerButton } from "../../UI/PowerButton";
+import { ToReturnButton } from "../../UI/PowerButton";
 import { SoundBar } from "../../UI/SoundBar";
 import { LanguageButton } from "../../UI/LanguageButton";
 import ParticleComponent from "../../UI/ParticleComponent/ParticleComponent";
@@ -30,7 +30,7 @@ export const MySkillsPage: React.FC = () => {
     <Wrapper>
       <LogoComponent themeMode="light" />
       <SocialIcons themeMode="light" />
-      <PowerButton />
+      <ToReturnButton themeMode="light" />
       <ParticleComponent themeMode="light" />
       <SoundBar themeMode="light" />
       <LanguageButton themeMode="light" />

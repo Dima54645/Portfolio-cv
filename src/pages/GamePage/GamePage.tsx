@@ -3,7 +3,7 @@ import React from "react";
 
 import { LogoComponent } from "../../UI/LogoComponent";
 import { SocialIcons } from "../../UI/SocialIcons";
-import { PowerButton } from "../../UI/PowerButton";
+import { ToReturnButton } from "../../UI/PowerButton";
 
 import { SoundBar } from "../../UI/SoundBar";
 import { LanguageButton } from "../../UI/LanguageButton";
@@ -26,7 +26,7 @@ export const GamePage: React.FC = () => {
       <Container>
         <LogoComponent themeMode="light" />
         <SocialIcons themeMode="light" />
-        <PowerButton />
+        <ToReturnButton themeMode="light" />
         <SoundBar themeMode="light" />
         <LanguageButton themeMode="light" />
         <Center>

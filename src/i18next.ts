@@ -50,6 +50,8 @@ const resources = {
           "I like to approach development as a creative process — creating products brings me genuine joy.",
       },
       experienceTitle: "EXPERIENCE",
+      achievements: "Achievements",
+      responsibilities: "Responsibilities",
       experience: {
         techCrew: {
           company: "Tech Crew",
@@ -171,6 +173,8 @@ const resources = {
           "Мне нравится подходить к разработке как к творчеству — процесс создания продуктов приносит искреннюю радость.",
       },
       experienceTitle: "ОПЫТ",
+      achievements: "Достижения",
+      responsibilities: "Обязанности",
       experience: {
         techCrew: {
           company: "Tech Crew",

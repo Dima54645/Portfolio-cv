@@ -1,16 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { IconButton } from "@mui/material";
 
-import { PowerBtn } from "../AllSvgs/AllSvgs";
-import { PowerButtonContainer } from "./PowerButton.styles";
+import { ToReturnIcon, ToReturnIconButton } from "./PowerButton.styles";
+import type { ThemeModeProps } from "../../types";
 
-export const PowerButton: React.FC = () => {
+export const ToReturnButton: React.FC<ThemeModeProps> = ({
+  themeMode = "light",
+}) => {
   return (
-    <PowerButtonContainer>
-      <IconButton component={NavLink} to="/" sx={{ p: 0 }}>
-        <PowerBtn width={30} height={30} style={{ color: "black" }} />
-      </IconButton>
-    </PowerButtonContainer>
+    <ToReturnIconButton
+      component={NavLink}
+      to="/"
+      size="large"
+      themeMode={themeMode}
+    >
+      <ToReturnIcon themeMode={themeMode} />
+    </ToReturnIconButton>
   );
 };

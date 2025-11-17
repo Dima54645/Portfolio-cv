@@ -9,7 +9,7 @@ export const LanguageIconButton = styled(IconButton, {
   top: "2rem",
   right: "2rem",
   zIndex: 10,
-  backgroundColor: themeMode === "dark" ? "#111111ff" : "#eeececff",
+  backgroundColor: themeMode === "dark" ? "#303030ff" : "#eeececff",
   borderRadius: "12px",
   "&:focus": {
     outline: "none",
@@ -19,7 +19,7 @@ export const LanguageIconButton = styled(IconButton, {
     boxShadow: "none",
   },
   "&:hover": {
-    backgroundColor: themeMode === "dark" ? "#111111ff" : "#eeececff",
+    backgroundColor: themeMode === "dark" ? "#303030ff" : "#eeececff",
   },
 }));
 

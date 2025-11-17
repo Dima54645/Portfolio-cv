@@ -5,7 +5,6 @@ import { Box, Typography } from "@mui/material";
 
 import { YinYang } from "../../UI/AllSvgs/AllSvgs";
 import { Intro } from "../Intro/Intro";
-import { PowerButton } from "../../UI/PowerButton";
 
 import { SocialIcons } from "../../UI/SocialIcons";
 import { SoundBar } from "../../UI/SoundBar";
@@ -32,7 +31,6 @@ export const MainPage: React.FC = () => {
       <DarkOverlay click={click} />
 
       <Box sx={{ p: 2, position: "relative", width: "100%", height: "100%" }}>
-        <PowerButton />
         <LogoComponent themeMode={click ? "dark" : "light"} />
         <SoundBar themeMode={click ? "dark" : "light"} />
         <SocialIcons themeMode={click ? "dark" : "light"} />
@@ -59,7 +57,7 @@ export const MainPage: React.FC = () => {
           <MotionLink
             initial={{ y: -200 }}
             animate={{ y: 0 }}
-            transition={{ type: "spring", duration: 1.5, delay: 1 }}
+            transition={{ type: "spring", duration: 1.5, delay: 0.1 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -82,7 +80,7 @@ export const MainPage: React.FC = () => {
           <MotionLink
             initial={{ y: -200 }}
             animate={{ y: 0 }}
-            transition={{ type: "spring", duration: 1.5, delay: 1 }}
+            transition={{ type: "spring", duration: 1.5, delay: 0.1 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -102,7 +100,7 @@ export const MainPage: React.FC = () => {
             <MotionLink
               initial={{ y: 200 }}
               animate={{ y: 0 }}
-              transition={{ type: "spring", duration: 1.5, delay: 1 }}
+              transition={{ type: "spring", duration: 1.5, delay: 0.1 }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -121,7 +119,7 @@ export const MainPage: React.FC = () => {
             <MotionLink
               initial={{ y: 200 }}
               animate={{ y: 0 }}
-              transition={{ type: "spring", duration: 1.5, delay: 1 }}
+              transition={{ type: "spring", duration: 1.5, delay: 0.1 }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

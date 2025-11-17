@@ -8,7 +8,7 @@ import { SoundBar } from "../../UI/SoundBar";
 import { LanguageButton } from "../../UI/LanguageButton";
 import { ExperienceCard } from "../../UI/ExperienceCard";
 import { LogoComponent } from "../../UI/LogoComponent";
-import { PowerButton } from "../../UI/PowerButton";
+import { ToReturnButton } from "../../UI/PowerButton";
 import { containerVariants } from "./ExperiencePage.const";
 import { Main, Rotate, Wrapper } from "./ExperiencePage.styles";
 
@@ -33,7 +33,7 @@ export const ExperiencePage: React.FC = () => {
       <LogoComponent themeMode="dark" />
       <SocialIcons themeMode="dark" />
       <SoundBar themeMode="dark" />
-      <PowerButton />
+      <ToReturnButton themeMode="dark" />
       <LanguageButton themeMode="dark" />
 
       <Main variants={containerVariants} initial="hidden" animate="show">

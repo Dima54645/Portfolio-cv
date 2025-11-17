@@ -278,7 +278,7 @@ export default function SnakeGame() {
         <PanelCard>
           <CardContent sx={{ p: 0 }}>
             <Box sx={{ display: "flex", gap: 1, mb: 2 }}>
-              <PanelCard sx={{ flex: 1, p: 1  }}>
+              <PanelCard sx={{ flex: 1, p: 1 }}>
                 <CardContent sx={{ p: 0 }}>
                   <Typography
                     variant="caption"
@@ -291,13 +291,14 @@ export default function SnakeGame() {
                 </CardContent>
               </PanelCard>
 
-              <PanelCard sx={{ flex: 1, p: 1  }}>
+              <PanelCard sx={{ flex: 1, p: 1 }}>
                 <CardContent sx={{ p: 0 }}>
                   <Typography
                     variant="caption"
                     sx={{ display: "flex", alignItems: "center" }}
                   >
-                    <Stars />{t("game.HighScore")}
+                    <Stars />
+                    {t("game.HighScore")}
                   </Typography>
                   <Typography variant="h6">{highScore}</Typography>
                 </CardContent>
@@ -311,7 +312,7 @@ export default function SnakeGame() {
               startIcon={running && !paused ? <Pause /> : <PlayArrow />}
               sx={{ background: "#fff", color: "#000" }}
             >
-              {running && !paused ? "Пауза" : "Старт"}
+              {running && !paused ? t("game.Pause") : t("game.Start")}
             </Button>
           </CardContent>
         </PanelCard>

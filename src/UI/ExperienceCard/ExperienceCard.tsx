@@ -19,6 +19,7 @@ import {
   TechChip,
 } from "./ExperienceCard.styles";
 import { ExpandableList } from "./ExpandableList";
+import { useTranslation } from "react-i18next";
 
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   company,
@@ -31,6 +32,8 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   technologies,
 }) => {
   const [expanded, setExpanded] = React.useState<string | false>("panel1");
+
+  const { t } = useTranslation();
 
   const handleChange =
     (panel: string) => (_event: React.SyntheticEvent, newExpanded: boolean) => {
@@ -79,7 +82,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
         )}
 
         <ExpandableList
-          title="📘 Обязанности"
+          title={"📘 " + t("responsibilities")}
           items={responsibilities}
           icon={<Bullet />}
           panelId="panel1"
@@ -88,7 +91,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
         />
 
         <ExpandableList
-          title="🏆 Достижения"
+          title={"🏆 " + t("achievements")}
           items={achievements}
           icon={<CheckMark />}
           panelId="panel2"

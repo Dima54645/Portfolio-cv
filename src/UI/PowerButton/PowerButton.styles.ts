@@ -1,31 +1,31 @@
-import { Box } from "@mui/material";
-import { styled } from "@mui/system";
-
-export const PowerButtonContainer = styled(Box)(() => ({
+import { IconButton, type IconButtonProps } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { styled } from "@mui/material/styles";
+import type { ThemeModeProps } from "../../types";
+import { type NavLinkProps } from "react-router-dom";
+export const ToReturnIconButton = styled(IconButton)<
+  IconButtonProps & ThemeModeProps & NavLinkProps
+>(({ themeMode }) => ({
   position: "fixed",
   top: "2rem",
   left: "50%",
-  transform: "translateX(-50%)",
-  backgroundColor: "#FCF6F4",
-  padding: "0.3rem",
-  borderRadius: "50%",
-  border: "1px solid #000",
-  width: "2.5rem",
-  height: "2.5rem",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  zIndex: 3,
-  cursor: "pointer",
-  transition: "all 0.3s ease",
-
+  zIndex: 10,
+  backgroundColor: themeMode === "dark" ? "#303030ff" : "#eeececff",
+  borderRadius: "12px",
+  "&:focus": {
+    outline: "none",
+  },
+  "&.Mui-focusVisible": {
+    outline: "none",
+    boxShadow: "none",
+  },
   "&:hover": {
-    backgroundColor: "rgba(0,255,0,0.4)",
-    boxShadow: "0 0 8px 6px rgba(0,255,0,0.2)",
+    backgroundColor: themeMode === "dark" ? "#303030ff" : "#eeececff",
   },
+}));
 
-  "& a": {
-    textDecoration: "none",
-    color: "inherit",
-  },
+export const ToReturnIcon = styled(ArrowBackIcon, {
+  shouldForwardProp: (prop) => prop !== "themeMode",
+})<{ themeMode: "light" | "dark" }>(({ themeMode }) => ({
+  color: themeMode === "dark" ? "white" : "black",
 }));

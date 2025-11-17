@@ -1,8 +1,8 @@
 import type { Point } from "./SnakeGame.types";
 
 export const COLORS = {
-  fieldA: "#c5c5c5",
-  fieldB: "#9c9c9c",
+  fieldA: "#797878ff",
+  fieldB: "#474646ff",
   snakeHead: "#ffe066",
   snakeBody: "#ffd43b",
   food: "#ff0000",

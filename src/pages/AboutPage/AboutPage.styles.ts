@@ -38,7 +38,7 @@ export const Main = styled("div")(() => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  fontSize: "calc(0.5rem + 1vw)",
+  fontSize: "calc(0.4rem + 1vw)",
   backdropFilter: "blur(4px)",
   position: "absolute",
   left: "calc(5rem + 5vw)",

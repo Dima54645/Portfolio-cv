@@ -7,7 +7,6 @@ export const playAnimation = keyframes`
   100% { transform: scaleY(1); }
 `;
 
-// ✅ Не пробрасываем isSmall в DOM
 export const SoundBarContainer = styled("div", {
   shouldForwardProp: (prop) => prop !== "isSmall",
 })<{ isSmall: boolean }>(({ isSmall }) => ({

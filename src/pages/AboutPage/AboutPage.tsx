@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import astronaut from "../../assets/Images/spaceman.png";
 import { LogoComponent } from "../../UI/LogoComponent";
 import { SocialIcons } from "../../UI/SocialIcons";
-import { PowerButton } from "../../UI/PowerButton";
+import { ToReturnButton } from "../../UI/PowerButton";
 import { BigTitle } from "../../UI/BigTitlte";
 import ParticleComponent from "../../UI/ParticleComponent/ParticleComponent";
 import { SoundBar } from "../../UI/SoundBar";
@@ -19,7 +19,7 @@ export const AboutPage: React.FC = () => {
     <StyledBox>
       <LogoComponent themeMode="dark" />
       <SocialIcons themeMode="dark" />
-      <PowerButton />
+      <ToReturnButton themeMode="dark" />
       <ParticleComponent themeMode="dark" />
       <SoundBar themeMode="dark" />
       <LanguageButton themeMode="dark" />

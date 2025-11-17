@@ -21,7 +21,7 @@ export const Root = styled(Box)(({ theme }) => ({
 }));
 
 export const GameCard = styled(Card)(({ theme }) => ({
-  width: "min(500px, 75vw)",
+  width: "min(400px, 75vw)",
   aspectRatio: "3 / 4",
   borderRadius: 10,
   display: "flex",

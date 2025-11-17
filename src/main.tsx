@@ -7,7 +7,7 @@ import "./i18next.ts";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio-cv">
       <App />
     </BrowserRouter>
   </StrictMode>
