@@ -3,9 +3,9 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { styled } from "@mui/material/styles";
 import type { ThemeModeProps } from "../../types";
 import { type NavLinkProps } from "react-router-dom";
-export const ToReturnIconButton = styled(IconButton)<
-  IconButtonProps & ThemeModeProps & NavLinkProps
->(({ themeMode }) => ({
+export const ToReturnIconButton = styled(IconButton, {
+  shouldForwardProp: (prop) => prop !== "themeMode",
+})<IconButtonProps & ThemeModeProps & NavLinkProps>(({ themeMode, theme }) => ({
   position: "fixed",
   top: "2rem",
   left: "50%",
@@ -21,6 +21,10 @@ export const ToReturnIconButton = styled(IconButton)<
   },
   "&:hover": {
     backgroundColor: themeMode === "dark" ? "#303030ff" : "#eeececff",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    left: "45%",
   },
 }));
 

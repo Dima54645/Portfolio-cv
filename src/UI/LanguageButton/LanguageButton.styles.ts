@@ -7,7 +7,7 @@ export const LanguageIconButton = styled(IconButton, {
 })<{ themeMode: "light" | "dark" }>(({ themeMode }) => ({
   position: "fixed",
   top: "2rem",
-  right: "2rem",
+  right: "2%",
   zIndex: 10,
   backgroundColor: themeMode === "dark" ? "#303030ff" : "#eeececff",
   borderRadius: "12px",
